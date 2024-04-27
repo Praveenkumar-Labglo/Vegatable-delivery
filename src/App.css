@@ -1,0 +1,201 @@
+.loginDiv {
+
+  background-color: #ffffff;
+  max-width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 495px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 20px rgba(25, 35, 59, .9);
+  margin-top: calc(50vh - 300px);
+  border: 1px solid #475985;
+}
+
+.loginDiv form {
+  text-align: center;
+
+}
+
+.loginDiv form fieldset {
+  opacity: 0;
+}
+
+.loginDiv form>div {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loginDiv form>div>div {
+  width: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+.loginDiv form>div>div input+div {
+  position: absolute;
+  right: 10px;
+}
+
+.loginDiv form>div {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.loader>div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loginDiv form input {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.loginDiv form>button {
+  background: #232e48;
+  width: 70%;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.loginDiv form>img {
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.loginContaier {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  margin-top: 40px;
+}
+
+.loginContaier>img {
+  width: 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  filter: grayscale(100%) sepia(52%) brightness(40%) hue-rotate(189deg) saturate(190%) contrast(172%);
+  -webkit-filter: grayscale(100%) sepia(52%) brightness(40%) hue-rotate(189deg) saturate(190%) contrast(172%);
+  -moz-filter: grayscale(100%) sepia(52%) brightness(40%) hue-rotate(189deg) saturate(190%) contrast(172%);
+}
+
+.loginImg {
+  display: inline-block;
+  width: 500px;
+}
+
+.loginImg img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.dashboard {
+  padding: 20px;
+  background-color: #232E48;
+  height: calc(100vh - 47px);
+  display: inline-block;
+  width: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+.list-page {
+  width: 100%;
+  padding: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Display five items in a row */
+  grid-gap: 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+} 
+/* src/components/AddProduct.css */
+.add-product-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+

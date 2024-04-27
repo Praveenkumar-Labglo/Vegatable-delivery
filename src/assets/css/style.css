@@ -1,0 +1,1156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 0px;
+  /* background: #F5F5F5; */
+  background-color: #232E48;
+  padding: 0px !important;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.dashboard {
+  padding: 20px;
+  background-color: #232E48;
+  height: calc(100vh - 47px);
+  display: inline-block;
+  width: calc(100% - 40px);
+  /* overflow-y: auto; */
+}
+
+.sidebar {
+  float: left;
+}
+
+.sidebar+div {
+  float: left;
+  width: calc(100% - 260px);
+  margin-left: 260px;
+}
+
+.tableContent {
+  width: calc(100% - 0px);
+
+  position: relative;
+  top: 56px;
+  background: #fff;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); */
+  border-radius: 0px 0px 20px 20px;
+  /* overflow: hidden; */
+  min-height: calc(100vh - 95px);
+  display: inline-block;
+}
+
+#demo-positioned-menu div[data-testid="sentinelStart"]+div {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+  right: 30px;
+  top: 75px !important;
+  border: 1px solid #eee;
+  min-width: 100px;
+  left: auto !important;
+  border-radius: 15px 0px 15px 15px;
+}
+
+.Drawer ul li {
+  border-radius: 32px 0px 0px 32px;
+  min-height: 60px;
+  position: relative;
+}
+
+.Drawer ul li span {
+  font-size: 14px !important;
+}
+
+.Drawer ul li.selected::after {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #fff;
+  border-radius: 32px 0px 0px 32px;
+  z-index: -1;
+}
+
+.Drawer ul li svg path {
+  fill: #cad8f9;
+}
+
+.Drawer ul li.selected svg path {
+  fill: #232E48;
+}
+
+.Drawer ul li.selected:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -20px;
+  height: 60px;
+  width: 60px;
+  border-bottom-right-radius: 50%;
+  background: #232e48;
+  box-shadow: 0 30px 0 0 #ffffff;
+  /* z-index: -1; */
+}
+
+.Drawer ul li.selected>div:before {
+  content: "";
+  position: absolute;
+  bottom: -67.5px;
+  right: -20px;
+  height: 60px;
+  width: 60px;
+  border-top-right-radius: 50%;
+  background: #232e48;
+  box-shadow: 0px -30px 0px 0px #ffffff;
+  z-index: 9;
+}
+
+.Drawer ul li>div {
+  background: transparent !important;
+  position: relative;
+}
+
+.Drawer ul li>div>span {
+  display: none;
+}
+
+.sidebar>div>header {
+  box-shadow: none;
+  z-index: 0;
+  background: #f1f1f1;
+}
+
+.sidebar>div>header+div>button {
+  /* display: none; */
+  margin-left: 260px;
+  position: absolute;
+  z-index: 9999;
+  top: -55px;
+}
+
+.loginDiv {
+
+  background-color: #ffffff;
+  max-width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 495px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 20px rgba(25, 35, 59, .9);
+  margin-top: calc(50vh - 300px);
+  border: 1px solid #475985;
+}
+
+.loginDiv form {
+  text-align: center;
+
+}
+
+.loginDiv form fieldset {
+  opacity: 0;
+}
+
+.loginDiv form>div {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loginDiv form>div>div {
+  width: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+.loginDiv form>div>div input+div {
+  position: absolute;
+  right: 10px;
+}
+
+.loginDiv form>div {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.loginDiv form input {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.statusDropDwn
+{
+  padding: 0px !important;
+  margin-left: 20px !important;
+  margin-top: 20px!important;
+  width: 200px!important;
+  /* margin-bottom: 25px !important; */
+}
+.statusDropDwn > div > div
+{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.statusDropDwn > div fieldset
+{
+  /* background: #eee; */
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.loginDiv form>button {
+  background: #232e48;
+  width: 70%;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.loginDiv form>img {
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.loginImg {
+  display: inline-block;
+  width: 500px;
+}
+
+.loginImg img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.loginContaier {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+
+.loginContaier>img {
+  width: 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  filter: grayscale(100%) sepia(52%) brightness(40%) hue-rotate(189deg) saturate(190%) contrast(172%);
+  -webkit-filter: grayscale(100%) sepia(52%) brightness(40%) hue-rotate(189deg) saturate(190%) contrast(172%);
+  -moz-filter: grayscale(100%) sepia(52%) brightness(40%) hue-rotate(189deg) saturate(190%) contrast(172%);
+}
+
+.logoIcon {
+  padding: 5px;
+  border-bottom: 1px solid #334267;
+  /* background: #fff; */
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 99;
+}
+
+.logoIcon img {
+  width: 100%;
+}
+.tableContent
+{
+  position: relative;
+}
+.tableContent>div {
+  /* overflow-y: visible !important; */
+  padding: 15px;
+  width: calc(100% - 30px);
+}
+.tableContent>div> h2
+{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tableContent>div .pageSubHead {
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 15px;
+  color: #334267;
+  margin-bottom: 0px;
+}
+
+.tableContent>div .pageSubHead+div .Iconbtn {
+  /* height: 50px; */
+  border-radius: 30px;
+  background: #232e48;
+  color: #fff;
+  box-shadow: none;
+}
+
+.tableContent>div .pageSubHead+div>input {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-right: 0px;
+  cursor: pointer;
+  height: 20px;
+}
+.tableContent div[class*="TableContainer"]
+{
+  border: 1px solid #ccc;
+  /* overflow: hidden; */
+  border-radius: 15px;
+  position: relative;
+}
+.tableContent > div > table
+{
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+.tableContent table {
+  margin-top: 0px;
+}
+
+.tableContent table td {
+  padding: 5px;
+  font-size: 13px;
+
+}
+
+.tableContent h1+p>div {
+  min-height: 50px !important;
+  position: relative;
+  top: 8px;
+}
+
+.tableContent table thead {
+  background: #ddd;
+}
+
+.tableContent table thead th {
+  white-space: nowrap;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
+}
+.tableContent table div
+{
+  min-height: auto;
+}
+.tableContent table td button {
+  border-radius: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.tablecontent>div[class*="Accordion"] {
+  box-shadow: none;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.tablecontent>div[class*="Accordion"]:hover>div {
+  /* border-radius: 20px 20px; */
+}
+
+.Drawer ul li div div:first-child {
+  min-width: 35px;
+}
+
+.tableContent tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tableContent tr:hover {
+  background-color: #f0f0f0;
+}
+
+.markedAttendance {
+  color: skyblue;
+}
+
+.markedAttendance:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.arrowbackIcon {
+  /* background-color: #232E48; */
+  padding: 5px;
+  border-radius: 50px;
+  color: #232E48;
+}
+
+.pageHead {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  top: -40px;
+  left: 50px;
+
+}
+
+.float-btn {
+  position: absolute !important;
+  right: 20px;
+  background-color: #232e48 !important;
+  color: #fff !important;
+  height: 35px !important;
+  padding: 0 20px !important;
+  top: 15px;
+}
+
+.btn {
+  background-color: #232e48 !important;
+  color: #fff !important;
+  padding: 0 20px !important;
+  height: 50px !important;
+  min-width: 150px !important;
+}
+
+.tableContent .float-btn+h1+div {
+  margin-top: 50px;
+}
+
+.closeBtn:hover {
+  opacity: 0.5;
+}
+
+.filterIcon {
+  background-color: #232E48;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.filterIcon:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn:active {
+  box-shadow: grey;
+  transform: translate(0, 0);
+
+}
+
+.personIcon {
+  background-color: #232E48;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px !important;
+  height: 50px !important;
+  border: none;
+  box-shadow: 5px 5px 20px 0px rgba(25, 35, 59, .9);
+  z-index: 999;
+}
+
+.starlabel label:after {
+  content: "*";
+  color: red;
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+.textField {
+  margin-top: 20px;
+  width: 400px
+}
+
+.accordion:hover {
+  cursor: pointer;
+  background-color: #232E48;
+  color: white;
+  opacity: 0.9;
+}
+
+.accordion>div {
+  display: inline-flex;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  justify-content: space-between;
+}
+
+.accordion>div>b {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.accordion>div>p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+.accordion>div>span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 15%;
+}
+
+.accordion>div>span b {
+  background-color: rgb(0 168 31);
+  padding-left: 5px;
+  padding-right: 5px;
+  min-width: 25px;
+  border-radius: 15px;
+  color: #fff;
+  position: relative;
+  left: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.accordion>div>span:last-child b {
+  background-color: crimson;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-width: 25px;
+  border-radius: 15px;
+  color: #fff;
+  position: relative;
+  left: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.newStudentPage {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  text-align: left;
+}
+
+.newStudentPage>div>div>div {
+  width: 100%;
+}
+
+form>.newStudentPage>div div fieldset {
+  border-radius: 30px;
+}
+
+form>.newStudentPage>div div input {
+  border-radius: 30px !important;
+  background-color: transparent !important;
+}
+
+.nodata {
+  height:65vh;
+  font-size: 20px !important;
+  color: #9f9f9f;
+  font-weight: normal;
+  text-align: center;
+  background: url(../images/nodata.png) no-repeat;
+  background-position: center 45% ;
+  position: absolute;
+  width: 100%;
+  top: 65px;
+  left: 0px;
+}
+.nodata b, .nodata span
+{
+  top: 45vh;
+  position: relative;
+  font-weight: normal;
+  text-align: center;
+}
+.tablenodata b
+{
+  top:130px;
+  position: relative;
+  font-weight: normal;
+  text-align: center;
+}
+.Accodion-nodata {
+  height: 30vh;
+  line-height: 30vh !important;
+  font-size: 20px !important;
+  color: #9f9f9f;
+  font-weight: normal;
+  background: url(../images/nodata.png) no-repeat;
+  background-position: center center ;
+}
+.Accodion-nodata span
+{
+  top: 30vh;
+  position: relative;
+  font-weight: normal;
+  text-align: center;
+
+}
+.tablenodata
+{
+  height: 35vh;
+  line-height: 30vh !important;
+  font-size: 20px !important;
+  color: #9f9f9f;
+  font-weight: normal;
+  background: url(../images/nodata.png) no-repeat;
+  background-position: center 45% ;
+  text-align: center;
+}
+.loader {
+  height:90vh;
+  line-height: 90vh !important;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.loader>div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.studentInfo {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  /* border-radius: 20px; */
+  max-width: calc(100% - 20px) !important;
+  margin-left: 20px !important;
+  margin-top: 20px !important;
+  padding-top: 50px !important;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px !important;
+}
+.studentInfo div::before
+{
+  display: none;
+}
+.studentInfo h4 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding-top: 5px;
+  padding-left: 20px;
+  background: #eee;
+  padding-right: 20px;
+  border-radius: 20px 0px 0px 0px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.studentInfo div[class*="Avatar"] {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-top: 0px;
+  vertical-align: top;
+  text-align: center;
+}
+.studentInfo div[class*="Avatar"] svg, .studentInfo div[class*="Avatar"] img
+{
+  height: 100px;
+  object-fit: contain;
+}
+.studentInfo div[class*="Avatar"]+div {
+  display: inline-block;
+  width: calc(100% - 120px);
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.studentInfo div[class*="Avatar"]+div h3 {
+  display: block;
+  width: 100%;
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top:20px;
+  margin-bottom: 0px;
+}
+.studentInfo div[class*="Avatar"]+div p {
+  display: inline-block;
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  width: auto;
+  padding-right: 15px;
+}
+.studentInfo div[class*="Avatar"]+div p svg
+{
+  width: 15px;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-right: 5px;
+  display: inline-block;
+    vertical-align: bottom;
+}
+.profileDetails {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../images/probg.jpg) no-repeat top center;
+  margin-top: 30px;
+  border-radius: 30px;
+  background-size: contain;
+  border: 1px solid #ddd;
+  padding: 0px !important;
+  /* margin-bottom: 50px; */
+  padding-bottom: 50px !important;
+}
+
+.profileDetails center {
+  position: relative;
+  top: 80px;
+}
+
+.profileDetails center span div {
+  border: 10px solid #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
+}
+
+.profileDetails>div {
+  margin-top: 80px;
+}
+
+.profileDetails>div>div {
+  padding-left: 80px;
+  padding-top: 0px !important;
+  height: 50px;
+}
+
+.profileDetails>div>div p {
+  line-height: 50px;
+}
+
+.profileDetails>div>div:nth-child(3),
+.profileDetails>div>div:nth-child(4),
+.profileDetails>div>div:nth-child(7),
+.profileDetails>div>div:nth-child(8) {
+  background-color: #f1f1f1;
+}
+
+.profileDetails label[aria-label="Upload Profile"] {
+  background-color: #fff !important;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+.profileDetails label[aria-label="Save"] {
+
+  display: block;
+  position: absolute;
+  left: calc(50% - 50px);
+  background: #232e48;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100px;
+  padding: 0px;
+  height: 35px;
+  line-height: 35px;
+  bottom: -45px;
+
+}
+
+.profileDetails label[aria-label="Save"] svg {
+  height: 20px;
+  position: relative;
+  top: 4px;
+}
+.leaveForm
+{
+  max-width: 600px;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto;
+  padding: 30px;
+  margin-top: 80px !important;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+.leaveForm > div
+{
+  padding-top: 0px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+.leaveForm > div > label
+{
+  font-weight: 500;
+}
+.leaveForm > label
+{
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 8px;
+  margin-bottom: 5px;
+}
+.leaveForm > label + div
+{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.leaveForm > label + div > label
+{
+  padding-left: 10px;
+}
+.leaveForm > label + div fieldset
+{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.leaveForm > div > input
+{
+  width: calc(100% - 20px);
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.leaveForm > div fieldset
+{
+  width: calc(100% - 20px);
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.leaveForm > button
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+.dashbox
+{
+  float: left;
+  margin-right: 30px !important;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  padding:20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .05);
+  margin-top: 20px !important;
+}
+.dashbox span
+{
+  padding: 20px;
+  border-radius: 15px;
+  float: left;
+}
+.dashbox span svg
+{
+  width: 35px;
+  height: 35px;
+  float: left;
+}
+.dashbox span svg path
+{
+  fill: #fff;
+}
+.dashbox span.green
+{
+  background-color: #00c95e;
+
+}
+.dashbox span.red
+{
+  background-color: #c93900;
+
+}
+.dashbox p
+{
+  float: right;
+  margin-top: 0px;
+    font-size: 18px;
+    color: #bbb;
+    padding-left: 30px;
+    margin-bottom: 5px;
+}
+.dashbox b
+{
+  display: block;
+  margin-left: auto;
+  width: 30px;
+  font-size: 28px;
+}
+.dashbox + h2
+{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.dashfilter
+{
+float: right;
+}
+.dashfilter > div
+{
+  padding-right: 0px !important;
+  margin-top: 0px !important;
+}
+.dashfilter > div > svg
+{
+  cursor: pointer;
+  margin-left: 10px;
+}
+.dashfilter > div > div fieldset
+{
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+.dashfilter > div > div div label
+{
+  padding-left: 15px !important;
+  font-size: 13px;
+  top: -5px;
+} 
+.dashfilter > div > div div label + div > div
+{
+  padding-left: 25px;
+  font-size: 13px;
+  padding-top: 10px !important;
+  padding-bottom: 10px!important;
+}
+.dashfilter > div > div > input
+{
+  padding-top: 8px !important;
+  padding-bottom: 8px!important;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 13px;
+  margin-left: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.dashfilter >  input
+{
+  padding-top: 9px !important;
+  padding-bottom: 6px!important;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 13px;
+  margin-left: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0px;
+}
+.dashfilter > div > div div[aria-haspopup="listbox"]
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -5px;
+  font-size: 13px;
+}
+.dashfilter > div>label
+{
+  top: -5px;
+  font-size: 13px;
+}
+.tableheaders
+{
+  float: left;
+  height: 45px;
+  line-height: 645px;
+}
+.tableheaders p
+{
+  line-height: 45px;
+}
+.attendenceAccordian div[aria-labelledby="panel1a-header"] > div > div
+{
+  box-shadow: none;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+}
+.attendenceAccordian div[aria-labelledby="panel1a-header"] > div > div table
+{
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+.attendenceDatehead
+{
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 14px; */
+}
+.attendenceDatehead p span
+{
+  display: inline-block;
+  background-color: #c93900;
+  padding: 2px 15px;
+  color: #fff;
+  border-radius: 15px;
+  margin-left: 10px;
+
+}
+.attendenceDatehead p:first-child
+{
+  line-height: 30px;
+  border-radius: 15px;
+  padding: 2px 15px;
+  background-color: #eee;
+}
+.attendenceDatehead p:first-child svg
+{
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  vertical-align: text-top;
+}
+.attendenceDatehead + div table
+{
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  border-collapse: separate;
+}
+.attendenceDatehead + div table div
+{
+  /* min-height: auto; */
+}
+.attendenceDatehead + div > div:first-child h5
+{
+  color: #fff;
+  width: 200px;
+  padding: 20px 20px;
+  background-color: #00c95e;
+  border-radius: 20px 20px 0px 0px;
+  font-size: 20px;
+  position: relative;
+  bottom: -15px;
+  padding-top: 10px;
+}
+.attendenceDatehead + div > div:last-child h5
+{
+  color: #fff;
+  width: 200px;
+  padding: 20px 20px;
+  background-color: #c93900;
+  border-radius: 20px 20px 0px 0px;
+  font-size: 20px;
+  position: relative;
+  bottom: -15px;
+  padding-top: 10px;
+}
+.submitBtnDiv
+{
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+  text-align: center;
+}
+.studProDetails
+{
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.studProDetails > div > div 
+{
+  border-bottom: 1px solid #ccc;
+}
+.studProDetails > div > div:nth-child(9), .studProDetails > div > div:nth-child(10), .studProDetails > div > div:nth-child(11)
+{
+  border: none;
+}
+.tableheaderalign th:nth-child(2)
+{
+  text-align: left !important;
+  padding-left: 45px;
+}
+.tableheaderalign th:nth-child(2) p
+{
+  cursor: pointer;
+}
+.pagination
+{
+  display: inline-block;
+  width: 100%;
+}
+.pagination > div
+{
+  float: right;
+}
+.pagination > nav
+{
+  float: left;
+}
+.pagination > nav ul
+{
+  margin-top: 12px;
+}
+.pagination > nav ul li button[aria-current="true"]
+{
+  background-color: #232E48;
+}
+.trBreak
+{
+  background-color: #0000006e !important;
+  color: #fff;
+}
+.trBreak:hover
+{
+  background-color: #0000006e !important;
+}
+.trBreak td
+{
+  color:#fff;
+  font-size: 15px !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
